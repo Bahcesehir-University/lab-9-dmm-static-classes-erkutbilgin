@@ -197,7 +197,7 @@ bool IntArray::add(int value) {
 int IntArray::get(int index) const {
     // TODO 11: If index is valid (0 <= index < count), return data[index].
     //          Otherwise return -1.
-        if(0 <= index < count){
+        if(0 <= index && index < count){
             return data[index];
         }
        return data[index]; 
