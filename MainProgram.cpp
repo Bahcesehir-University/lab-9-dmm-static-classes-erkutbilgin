@@ -198,7 +198,7 @@ int IntArray::get(int index) const {
         if(0 <= index && index < count){
             return data[index];
         }
-       return data[index]; 
+       return -1; 
     
 }
 
