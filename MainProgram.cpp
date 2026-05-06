@@ -183,7 +183,7 @@ bool IntArray::add(int value) {
     // TODO 10: If count < capacity, add value at data[count],
     //          increment count, return true.
     //          Otherwise return false.
-    if(count < capacity - 1){
+    if(count < capacity){
             data[count] = value;
             count++;
             return true;
