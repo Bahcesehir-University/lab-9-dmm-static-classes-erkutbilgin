@@ -130,11 +130,9 @@ IntArray::IntArray(int cap) {
     // TODO 6: Allocate dynamic array of size cap using 'new'
     //         Initialize capacity, count
     //         Notify Tracker that an object was created
-    
-    data = new int[cap];
-    data = new int[count];
-        for (int i = 0; i < count; i++)
-            data[i] = i;
+    capacity = cap;
+    count = 0;
+    data = new int[capacity];
     Tracker::objectCreated();
 }
 
